@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksella | Agatha Christie</title>
+    <link rel="icon" href="images/books.png" sizes="16X16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="thrill.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    
+</head>
+<nav class="navbar">
+    <!-- LOGO -->
+   <a id="web-logo" href="index.html" ><div class="logo">Booksella &nbsp;<img src="images/book.png" width="46px"></div></a> 
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="index.html">BestSeller</a></li>
+        <li><a href="index.html" >Genre</a></li>
+        <li><a href="index.html" >Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <body style="background-color: white;">
+
+    <div class="topnav">
+      <a id="sub-header" class="active-genre" href="thriller.html">Thriller</a>
+      <a   id="sub-header" href="horror.html"  style="background-color: #ee9632;color:white">Horror</a>
+      <a  id="sub-header" href="non-fiction.html">Non-Fiction</a>
+      <a  id="sub-header" href="child.html">Children's</a>
+      <a   id="sub-header" href="science.html">Science Fiction</a>
+      <a  id="sub-header"  href="fantasy.html">Fantasy</a>
+      <a  id="sub-header" href="romance.html">Romance</a>
+      <a  id="sub-header" href="history.html">History</a>
+    </div>
+    
+    <div class="genre-container">
+  
+            <div class="genre-row">
+              <div class="genre-column" style="background-color:rgb(255, 255, 255); width: 20%; height:max-content;">
+                <div class="ratings"> 
+                  <h4 style="text-align: center;">Ratings</h4>
+                    <fieldset class="rate">
+                      <input type="radio" id="rating10" name="rating" value="10" /><label for="rating10" title="5 stars"></label>
+                      <input type="radio" id="rating9" name="rating" value="9" /><label class="half" for="rating9" title="4 1/2 stars"></label>
+                      <input type="radio" id="rating8" name="rating" value="8" /><label for="rating8" title="4 stars"></label>
+                      <input type="radio" id="rating7" name="rating" value="7" /><label class="half" for="rating7" title="3 1/2 stars"></label>
+                      <input type="radio" id="rating6" name="rating" value="6" /><label for="rating6" title="3 stars"></label>
+                      <input type="radio" id="rating5" name="rating" value="5" /><label class="half" for="rating5" title="2 1/2 stars"></label>
+                      <input type="radio" id="rating4" name="rating" value="4" /><label for="rating4" title="2 stars"></label>
+                      <input type="radio" id="rating3" name="rating" value="3" /><label class="half" for="rating3" title="1 1/2 stars"></label>
+                      <input type="radio" id="rating2" name="rating" value="2" /><label for="rating2" title="1 star"></label>
+                      <input type="radio" id="rating1" name="rating" value="1" /><label class="half" for="rating1" title="1/2 star"></label>
+                   </fieldset>
+                </div>
+                <br>
+                <div class="filter-left-check"> 
+                  <u><h3 style="font-family: serif;margin:15px;text-align:center;">GENRE</h3></u>
+                    <label class="container-filter">History
+                      <input type="checkbox" checked="checked" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Romance
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Fantasy
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Science Fiction
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Children's
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Non-Fiction
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Horror
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Thriller
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+                
+                <div class="filter-left-check"> 
+                  <u><h3 style="font-family: serif;margin:15px;text-align:center;">LANGUAGE</h3></u>
+                    <label class="container-filter">History
+                      <input type="checkbox" checked="checked" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Romance
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container-filter">Fantasy
+                      <input type="checkbox" id="input-check">
+                      <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+               </div>
+
+              <div class="genre-column" style="background-color:rgb(255, 255, 255);width:80%;height:max-content;">
+                <a href="cart.html" id="text-link"><div class="add-to-cart" style="background-color: #ee9632;"> Add to cart<img src="images/shopping-cart.png" height="30px" alt="" id="add-to-cart-img"></div> </a> 
+                <h3 style="text-align: center;margin-top:5px;">Espionage, Mystery/Detective and Thriller Books</h3>
+
+                <section>
+                  <main class="main-thrill">
+                      
+                      <div class="card-thriller">
+                        <a href="#"  style="color: black;">
+                          <img src="https://horrornovelreviews.files.wordpress.com/2015/12/little-girls.jpg" alt="Guava"  class="product-img-thril">
+                          <!-- <div class="centered-img-thril">Thriller</div> -->
+                          <div id="book-price-thril">Rs.545<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                        </a>
+                      </div>
+                   
+          
+                      <div class="card-thriller">
+                        <a href="#"  style="color: black;">
+                          <img src="https://www.bookgeeks.in/wp-content/uploads/2022/01/The-Shadow-on-the-Wall-by-Ruskin-Bond.jpg" alt="Apple"  class="product-img-thril">
+                          <!-- <div class="centered-img-thril">Horror</div> -->
+                          <div id="book-price-thril">Rs.480<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                          </a>
+                      </div>
+          
+                      <div class="card-thriller">
+                        <a href="#"  style="color: black;">
+                          <img src="https://cdn.pastemagazine.com/www/system/images/photo_albums/best-horror-21st-century/large/imageedit-41-3320002786.jpg?1384968217" alt="Mango"  class="product-img-thril">
+                          <!-- <div class="centered-img-thril"><span style="font-size: 21px;">Non-Fiction</span></div> -->
+                           <!-- <p class="product-price">Rs 450 per kg</p>
+                          <button class="product-btn">Add to Cart</button> -->
+                          <div id="book-price-thril">Rs.460<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                          </a>
+                          </div>
+                      
+                      
+                      <div class="card-thriller">
+                        <a href="#"  style="color: black;">
+                          <img src="https://www.horrordna.com/images/features/top-10-lists-2019/tony-jones-top-10-horror-novels-2019/tony-jones-top10-books-2019-large.jpg" alt="Grapes"  class="product-img-thril" >
+                          <!-- <div class="centered-img-thril">Children's</div> -->
+                          <div id="book-price-thril">Rs.420<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                        </a>
+                      </div>
+                  </main>
+                 
+                    
+               </section>
+
+
+               <section>
+                <main class="main-thrill-1">
+                    
+                    <div class="card-thriller">
+                      <a href="#"  style="color: black;">
+                        <img src="https://m.media-amazon.com/images/I/41elrj+FrmL.jpg" alt="Guava"  class="product-img-thril">
+                        <!-- <div class="centered-img-thril">Thriller</div> -->
+                        <div id="book-price-thril">Rs.400<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                      </a>
+                    </div>
+                 
+        
+                    <div class="card-thriller">
+                      <a href="#"  style="color: black;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ehnIpJ9EhwxFFw3ifveS6Dv9hF_XAbyro0UEEekLvcKBzVNeNhwYWw8eoO8N3bJD1-s&usqp=CAU" alt="Apple"  class="product-img-thril">
+                        <!-- <div class="centered-img-thril">Horror</div> -->
+                        <div id="book-price-thril">Rs.700<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                      </a>
+                    </div>
+        
+                    <div class="card-thriller">
+                      <a href="#"  style="color: black;">
+                        <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522727054l/39707880._SY475_.jpg" alt="Mango"  class="product-img-thril">
+                        <!-- <div class="centered-img-thril"><span style="font-size: 21px;">Non-Fiction</span></div> -->
+                         <!-- <p class="product-price">Rs 450 per kg</p>
+                        <button class="product-btn">Add to Cart</button> -->
+                        <div id="book-price-thril">Rs.550<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                        
+                        </a>
+                        </div>
+                    
+                    
+                    <div class="card-thriller">
+                      <a href="#"  style="color: black;">
+                        <img src="https://m.media-amazon.com/images/I/41IiDtKa9xL.jpg" alt="Grapes"  class="product-img-thril" >
+                        <!-- <div class="centered-img-thril">Children's</div> -->
+                        <div id="book-price-thril">Rs.450<a href="cart.html"><i class="fas fa-shopping-cart fa-1x"></i></a></div>
+                      </a>
+                    </div>
+                </main>
+               
+                  
+             </section>
+                
+              </div>
+            </div>
+
+    </div>
+    
+  </body>

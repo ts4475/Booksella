@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksella | Cart</title>
+    <link rel="icon" href="images/books.png" sizes="16X16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="cart.css">
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    
+</head>
+<nav class="navbar">
+    <!-- LOGO -->
+   <a id="web-logo" href="index.html" ><div class="logo">Booksella &nbsp;<img src="images/book.png" width="46px"></div></a> 
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="index.html">BestSeller</a></li>
+        <li><a href="index.html" >Genre</a></li>
+        <li><a href="index.html" >Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <body >
+    <div class="cart-container">
+        <table id="cart" class="table table-hover table-condensed">
+                        <thead>
+                            <tr>
+                                <th style="width:50%">Product</th>
+                                <th style="width:10%">Price</th>
+                                <th style="width:8%">Quantity</th>
+                                <th style="width:22%" class="text-center">Subtotal</th>
+                                <th style="width:10%"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="https://m.media-amazon.com/images/I/51OIL4srewL.jpg" alt="..." height="200px"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">AKBAR THE GREAT MUGHAL</h4>
+                                            <p>Akbar was accorded the epithet "the Great" because of his many accomplishments, including his record of unbeaten military campaigns that consolidated Mughal rule in the Indian subcontinent</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">Rs.580</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td data-th="Subtotal" class="text-center">580</td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    <button class="btn  btn-sm"><img src="images/delete.png" height="20px" alt=""></button>								
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-th="Product">
+                                    <div class="row">
+                                        <div class="col-sm-2 hidden-xs"><img src="https://ik.imagekit.io/panmac/tr:q-75,di-placeholder_portrait_aMjPtD9YZ.jpg,w-350,pr-true,bl/edition/9781509867332.jpg" alt="..." height="200px"/></div>
+                                        <div class="col-sm-10">
+                                            <h4 class="nomargin">GOD AN ANATOMY</h4>
+                                            <p>God: An Anatomy is a tour de force. Stavrakopoulou has created not just an extraordinarily rich and nuanced portrait of Yahweh himself, but an intricate and detailed account of the cultural values and practices he embodied, and the wider world of myth and history out of which he emerged.</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-th="Price">Rs.545</td>
+                                <td data-th="Quantity">
+                                    <input type="number" class="form-control text-center" value="1">
+                                </td>
+                                <td data-th="Subtotal" class="text-center">545</td>
+                                <td class="actions" data-th="">
+                                    <button class="btn btn-info btn-sm"><i class="fa fa-refresh"></i></button>
+                                    <button class="btn  btn-sm"><img src="images/delete.png" height="20px" alt=""></button>								
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="visible-xs">
+                                <td class="text-center"><strong>Total Rs.1125</strong></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+                                <td colspan="2" class="hidden-xs"></td>
+                                <td class="hidden-xs text-center"><strong>Total Rs.1125</strong></td>
+                                <td><a href="#" class="btn btn-success btn-block">Checkout <i class="fa fa-angle-right"></i></a></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+    </div>
+   </body>
+  </html>
